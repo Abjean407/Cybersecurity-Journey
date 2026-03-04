@@ -1,0 +1,51 @@
+In this lab, I worked with a mock Virtual Machine Manager to practice core virtualization administration tasks, including VM troubleshooting, deployment, and resource analysis.
+
+
+Key Tasks Completed:
+
+                -VM TroubleShooting-
+
+1.)Identified a virtual machine that was displaying an error state.
+2.)Reviewed VM configuration and status.
+3.)Diagnosed the issue and restored the VM to a functional state.
+
+              -VM Deployment-
+
+1.)Created a new virtual machine named marketing-vm for the marketing department.
+2.)Practiced proper naming conventions aligned with organizational structure.
+
+              -Resource Monitoring & Analysis-
+
+1.)Identified which VM was consuming the most storage.
+2.)Determined which VM had been running for the longest uptime.
+3.)Gained hands-on experience analyzing VM metrics such as:
+---Storage allocation
+---Runtime duration
+---System status
+
+         -What I learned- / -Summary-
+
+--How virtualization platforms manage multiple systems on a single host.
+
+--The importance of resource monitoring in preventing performance degradation.
+
+--Basic troubleshooting methodology in a virtualized environment.
+
+--How IT teams provision new VMs to support business departments.
+
+--Why uptime and storage tracking are critical for capacity planning.
+
+
+        -Skills Strengthned-
+
+----Virtual Machine Management
+
+---Basic Systems Administration
+
+---IT Troubleshooting
+
+---Resource Monitoring
+
+---Organizational IT Support Workflow
+
+
