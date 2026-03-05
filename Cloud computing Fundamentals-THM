@@ -1,0 +1,128 @@
+In this lab, I explored the core fundamentals of cloud computing, including its evolution, major service models, and real-world use cases.I also practiced deploying and managing virtual machines in a simulated cloud environment similar to Amazon Web Services (AWS).
+
+
+-Evolution of Cloud Computing-
+1.)Physical Servers
+Organizations initially relied on dedicated physical servers for each application. This required large data centers, expensive hardware, and significant maintenance.
+
+2.)Virtualization
+Virtualization technology allowed multiple virtual machines to run on a single physical server, improving resource efficiency and reducing hardware costs.
+
+3.)Automation & Remote Management
+Tools were developed to automate server deployment and management remotely, reducing manual configuration and improving scalability.
+
+4.)Cloud Computing Platforms
+Companies like Amazon Web Services introduced on-demand infrastructure, allowing businesses to instantly deploy computing resources without owning physical hardware.
+
+5.)Modern Cloud Computing
+Today, organizations can build globally accessible, highly scalable applications using cloud platforms.
+
+-Key Benefits of Cloud Computing-
+
+1.)On-Demand Resources – Businesses can create or remove computing instances instantly without waiting for hardware.
+
+2.)Scalability – Infrastructure can grow or shrink depending on demand.
+
+3.)Cost Efficiency – Organizations only pay for the resources they use.
+
+4.)High Security Standards – Major cloud providers invest heavily in security infrastructure.
+
+5.)High Availability – Applications can remain online even if individual servers fail.
+
+6.)Global Access – Services can be deployed across multiple regions worldwide.
+
+-Types of Cloud Deployment Models-
+1.)Public Cloud
+
+Cloud resources are owned and managed by third-party providers.
+Commonly used by startups, web platforms, and global applications due to low cost and easy scalability.
+
+2.)Private Cloud
+
+Infrastructure dedicated to a single organization.
+Common in industries like banking, healthcare, and government where compliance and data control are critical.
+
+3.)Hybrid Cloud
+
+Combines public and private cloud infrastructure.
+Often used by large organizations (such as e-commerce companies) to keep sensitive data private while scaling workloads publicly during high demand.
+
+-Cloud Service Models-
+1.)Infrastructure as a Service (IaaS)
+
+-Users rent basic computing resources such as virtual machines, storage, and networking.
+-The provider manages the physical infrastructure while the user manages the operating system and applications.
+
+2.)Platform as a Service (PaaS)
+
+-The cloud provider manages the infrastructure and operating system.
+-Developers focus on building and deploying applications without managing servers.
+
+3.)Software as a Service (SaaS)
+
+-Complete applications delivered through the internet.
+-Users simply access the software through a browser or app while the provider manages everything.
+-Examples include services like Gmail and Zoom.
+
+-Hands-On Lab Practice-
+
+"In the practical portion of the lab, I worked inside a simulated Amazon Web Services cloud dashboard."
+
+Tasks completed:
+1.)Created 4 virtual machine instances
+
+2.)Practiced starting and stopping instances
+
+3.)Observed how running vs stopped instances affect monthly cloud costs
+
+4.)Reviewed estimated billing based on resource usage
+
+"This exercise helped reinforce how cloud providers charge customers based on active computing resources and usage time."
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
