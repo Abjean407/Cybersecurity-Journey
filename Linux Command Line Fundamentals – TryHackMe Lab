@@ -1,0 +1,74 @@
+Lab Overview
+In this lab, I practiced navigating and interacting with a Linux system using the command line interface (CLI).
+The goal was to become familiar with basic commands used to inspect system information, search for files, and navigate the Linux filesystem.
+
+
+-Commands Practiced-
+1.)Identify Current User
+'whoami'
+  *Displays the username of the currently logged-in user in the terminal session.
+  *Useful for verifying permissions and understanding which account is executing commands.
+
+2.)View System & Kernel Information
+'uname -a'
+*Displays detailed system information including:
+*Kernel version
+*Operating system
+*Hostname
+*System architecture
+*This command is often used during system diagnostics and troubleshooting.
+
+3.)Check Disk Usage
+'df -h'
+*Displays disk space usage for mounted filesystems.
+*The -h flag provides output in human-readable format (MB/GB).
+*Helps administrators monitor storage availability and capacity.
+
+4.)Search for Files in the Filesystem
+'find ~ -name <file_name>'
+*In Linux, files beginning with . are hidden files.
+*These files are often configuration files used by applications or the system.
+*The find command allows users to locate files even if they are hidden.
+
+
+
+
+
+HANDS ON LAB:
+
+During the lab, I completed several Linux-based challenges that required me to:
+
+-Navigate the Linux filesystem
+
+-Search for hidden files
+
+-Inspect system information
+
+-Read important configuration files
+
+-Follow clues to locate specific files and complete missions within the environment
+
+
+KEY SKILLS DEVELOPED:
+-Linux command line navigation
+
+-File searching and discovery
+
+-System information inspection
+
+-Disk usage monitoring
+
+-Understanding hidden files and configuration data
+
+
+
+
+
+
+
+
+
+
+
+
+
