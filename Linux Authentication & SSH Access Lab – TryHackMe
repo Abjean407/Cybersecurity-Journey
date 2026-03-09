@@ -1,0 +1,86 @@
+In this lab, I simulated a basic security assessment scenario where an attacker attempts to gain access to a remote Linux system using discovered credentials. 
+The exercise demonstrated how weak password practices can lead to unauthorized system access and how attackers may attempt to escalate privileges after gaining an initial foothold.
+The target machine was accessed through SSH (Secure Shell) from a remote terminal environment.
+
+
+OBJECTIVE:
+The goal of the exercise was to:
+
+Attempt login access using discovered credentials
+Authenticate to a remote system using SSH
+Navigate the Linux filesystem
+Read files and inspect system information
+Identify additional users and attempt further access
+
+
+Commands Used
+1. Remote Login via SSH
+
+'ssh sammie@10.64.151.25'
+
+1.)Used SSH (Secure Shell) to remotely connect to the target Linux machine.
+2.)Login was successful using the discovered password dragon.
+3.)During the first connection, SSH prompted confirmation of the server's authenticity.
+Key concept:
+
+SSH is commonly used for secure remote administration of Linux systems.
+
+2. Identify Current User
+'WHOAMI'
+Purpose:
+
+Confirms which user account is currently active in the terminal session.
+
+
+3.List Files in the Current Directory
+By using LS
+4.Read File Contents
+By using cat <file_name>
+5.View Command History
+runnign command 'history'
+
+
+
+
+KEY SECURITY CONCEPTS LEARNED
+
+-Weak password practices create serious security vulnerabilities.
+
+-Attackers often use credential guessing to gain initial system access.
+
+-SSH is a common entry point for remote system administration.
+
+-Commands like history can leak sensitive operational data.
+
+-After initial access, attackers may attempt privilege escalation to gain administrative rights.
+
+
+SKILLS Practiced
+
+-Linux command line navigation
+
+-SSH remote login
+
+-File discovery and inspection
+
+-Basic credential attack methodology
+
+-Understanding privilege escalation pathways
+
+
+KEY TAKEAWAY
+
+This lab demonstrated how simple mistakes like weak passwords and exposed credentials can allow attackers to gain unauthorized access to Linux systems. 
+Proper password management, access control, and security awareness are critical for protecting infrastructure.
+
+
+
+
+
+
+
+
+
+
+
+
