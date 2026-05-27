@@ -1,0 +1,152 @@
+Step 1 — Download and Install UTM
+
+Because I am using an Apple Silicon Mac (M1), I used UTM instead of VirtualBox for better ARM compatibility.
+
+Process
+Downloaded UTM from the official website
+Installed the application on macOS
+Opened UTM and created a new virtual machine
+
+
+Step 2 — Download Ubuntu ARM ISO
+
+I downloaded the ARM64 version of Ubuntu because Apple Silicon Macs use ARM architecture.
+
+Important Lesson
+
+Intel/AMD Ubuntu ISOs can cause boot and compatibility issues on M1 Macs.
+
+Step 3 — Create Ubuntu Virtual Machine
+
+Inside UTM:
+
+Created a new Linux virtual machine
+Selected the Ubuntu ARM ISO
+Configured system resources
+VM Configuration
+Setting	Value
+RAM	4 GB
+CPU Cores	2
+Storage	40 GB
+Storage Type	Dynamically Allocated
+
+
+Step 4 — Install Ubuntu
+
+During installation:
+
+skipped internet setup initially
+enabled third-party software/drivers
+selected no encryption
+disabled Active Directory integration
+
+After installation:
+
+rebooted the VM
+removed the Ubuntu ISO from UTM
+booted successfully into the installed Ubuntu system
+
+
+Step 5 — Open Terminal and Practice Linux Commands
+
+I opened the Ubuntu terminal and practiced basic Linux commands to learn how to navigate the Linux filesystem and manage files and folders.
+
+First, I used the pwd command to display the current working directory. Then I used the ls command to list files and folders in the current directory.
+
+Next, I created my first folder called “Practice Folder” using the mkdir command. After creating the folder, I navigated into it using the cd command.
+
+Inside the folder, I created my first text file called notes.txt using the touch command. Finally, I used ls again to verify that the file was successfully created.
+
+This step introduced me to:
+
+Linux terminal navigation
+file and folder management
+basic Linux commands
+working with directories in a Linux environment
+
+
+Step 6 — Find Ubuntu VM IP Address
+
+I used the ip a command inside the Ubuntu terminal to identify the virtual machine’s IP address. The IP address assigned to the VM was 192.168.64.3.
+
+This step helped me understand:
+
+Linux network interfaces
+local IP addressing
+how virtual machines communicate on a network
+
+Step 7 — Install OpenSSH Server
+
+To remotely connect to the Ubuntu VM from my Mac, I installed the OpenSSH server package.
+
+First, I updated Ubuntu’s package list using:
+
+sudo apt update
+
+Then I installed the OpenSSH server package using:
+
+sudo apt install openssh-server -y
+
+After installation, I started the SSH service and verified that the service was actively running.
+
+This step introduced me to:
+
+package management with apt
+Linux services
+remote access technologies
+SSH server configuration
+
+Step 8 — SSH Into Ubuntu VM From macOS
+
+Using the macOS terminal, I remotely connected into the Ubuntu virtual machine using SSH.
+
+I used the VM’s IP address and my Ubuntu username to establish the connection.
+
+During the first connection attempt, SSH displayed a fingerprint verification message asking whether I trusted the host machine. I typed “yes” to continue and then entered my Ubuntu password.
+
+After successful authentication, I gained full remote terminal access to the Ubuntu virtual machine directly from my Mac.
+
+This step helped me understand:
+
+remote Linux administration
+SSH authentication
+client/server communication
+secure remote access
+
+
+
+
+
+
+
+Skills Learned
+
+This lab introduced me to:
+
+Linux virtualization
+ARM architecture compatibility
+Ubuntu installation
+Linux terminal navigation
+File and directory management
+Networking basics
+IP addressing
+SSH remote administration
+Package management with apt
+Technologies Used
+UTM
+Ubuntu Linux
+OpenSSH Server
+macOS Terminal
+Linux Terminal
+Next Steps
+
+Future labs will include:
+
+SCP file transfers
+Linux permissions
+Networking tools
+Wireshark
+Nmap
+Firewall configuration
+Scripting
+Cybersecurity practice environment
