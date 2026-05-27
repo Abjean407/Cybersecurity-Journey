@@ -1,0 +1,123 @@
+Overview
+
+In this lab, I practiced transferring files securely between my Mac and my Ubuntu Linux virtual machine using SCP (Secure Copy Protocol) over SSH.
+
+This lab helped me understand:
+
+secure file transfers
+remote Linux administration
+client/server networking
+Linux file management
+SSH-based communication
+-----------------------------------------------------
+Step 1 — Open Multiple Terminal Sessions
+
+I kept one terminal window connected to the Ubuntu virtual machine through SSH while opening a second local macOS terminal window.
+
+This helped me understand the difference between:
+
+a local machine
+a remote Linux system
+
+-----------------------------------------------------
+
+
+Step 2 — Create a Local Folder on macOS
+
+On my local Mac terminal, I created a folder called transferfold to store files that would later be transferred to the Ubuntu VM.
+
+After creating the folder, I navigated into it using the cd command.
+
+This introduced me to:
+
+local filesystem navigation
+organizing files before transfer
+
+-----------------------------------------------------
+
+Step 3 — Create a File on macOS
+
+Inside the transferfold directory, I created a text file called notes.txt.
+
+After creating the file, I verified that it existed using the ls command.
+
+This reinforced:
+
+file creation
+directory verification
+Linux/macOS terminal consistency
+-----------------------------------------------------
+Step 4 — Transfer the File to Ubuntu Using SCP
+
+Using the local macOS terminal, I transferred the notes.txt file to the Ubuntu virtual machine using SCP.
+
+The transfer used:
+
+my Ubuntu username
+the VM’s IP address
+the Linux home directory destination path
+
+After entering my Ubuntu password, the transfer completed successfully.
+
+This step introduced me to:
+
+SCP (Secure Copy Protocol)
+secure file transfer over SSH
+Linux file paths
+remote system communication
+-----------------------------------------------------
+
+Step 5 — Verify the File Transfer on Ubuntu
+
+Inside the SSH session connected to Ubuntu, I used the ls command to confirm that notes.txt had successfully transferred into the Linux machine.
+
+The file appeared in the Ubuntu home directory, confirming that the SCP transfer worked correctly.
+
+This helped reinforce:
+
+remote file verification
+Linux terminal workflow
+SSH session management
+-----------------------------------------------------
+Step 6 — Read and Edit the File in Linux
+
+After verifying the file transfer, I used the cat command to read the contents of the file.
+
+I then added text into the file using terminal commands and verified the updated contents afterward.
+-----------------------------------------------------
+This introduced me to:
+
+reading files in Linux
+editing file contents from terminal
+Linux text manipulation
+remote file management
+Skills Learned
+-----------------------------------------------------
+This lab introduced me to:
+
+SCP file transfers
+SSH-based workflows
+Linux file management
+client/server networking
+terminal-based remote administration
+Linux path structures
+secure remote communication
+Technologies Used
+UTM
+Ubuntu Linux
+OpenSSH Server
+SCP
+macOS Terminal
+Linux Terminal
+Next Steps
+-----------------------------------------------------
+Future labs will include:
+
+Linux permissions
+chmod and chown
+networking tools
+packet analysis
+Wireshark
+Nmap
+firewall configuration
+cybersecurity tooling
