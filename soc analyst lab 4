@@ -1,0 +1,145 @@
+# Lab 4 – Linux Users & Permissions
+
+## Objective
+
+The goal of this lab was to understand Linux user management, file ownership, permissions, and the principle of least privilege.
+
+## Environment
+
+* Host Machine: MacBook Air
+* Virtual Machine: Ubuntu Linux
+* Connection Method: SSH
+
+## Tasks Performed
+
+### 1. Connected to Ubuntu via SSH
+
+Successfully established a remote connection from my MacBook to the Ubuntu virtual machine using SSH.
+
+```bash
+ssh anthony-jean@xxx.xxx.xx.3
+```
+
+### 2. Created a New User
+
+Created a new Linux user account named `testuser1`.
+
+```bash
+sudo adduser testuser1
+```
+
+### 3. Switched to the New User
+
+Changed from the `anthony-jean` account to the newly created `testuser1` account.
+
+```bash
+su - testuser1
+```
+
+Verified the active user:
+
+```bash
+whoami
+```
+
+Output:
+
+```text
+testuser1
+```
+
+### 4. Created a File
+
+Created a file named `secret.txt`.
+
+```bash
+touch secret.txt
+```
+
+### 5. Examined File Permissions
+
+Viewed file ownership and permissions.
+
+```bash
+ls -l
+```
+
+Output:
+
+```text
+-rw-rw-r-- 1 testuser1 testuser1 0 May 28 23:21 secret.txt( i am still reviewing the -rw,--,-r language)
+```
+
+### 6. Modified File Permissions
+
+Restricted access to the file using chmod.
+
+```bash
+chmod 700 secret.txt
+```
+
+Verified the new permissions:
+
+```bash
+ls -l
+```
+
+Output:
+
+```text
+-rwx------ 1 testuser1 testuser1 0 May 28 23:21 secret.txt
+```
+
+### 7. Tested Access Control
+
+Added content to the file:
+
+```bash
+echo "top secret data" > secret.txt
+```
+
+Returned to the original user account and attempted to access the file.
+
+```bash
+cat /home/testuser1/secret.txt
+```
+
+Output:
+
+```text
+Permission denied
+```
+
+## Key Concepts Learned
+
+### User Accounts
+
+Linux uses user accounts to separate identities and control access to resources.
+
+### File Ownership
+
+Every file has an owner and an associated group.
+
+### Permissions
+
+Linux permissions are divided into:
+
+* Read (r)
+* Write (w)
+* Execute (x)
+
+### chmod 700
+
+The permission setting `700` grants:
+
+* Owner: Read, Write, Execute
+* Group: No access
+* Others: No access
+
+### Least Privilege
+
+Users should only have the minimum permissions required to perform their tasks. Restricting access reduces security risk and protects sensitive data.
+
+## Outcome
+
+Successfully created and managed Linux user accounts, modified file permissions, and demonstrated access control by preventing unauthorized access to a protected file.
